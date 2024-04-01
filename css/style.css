@@ -1,0 +1,764 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Rubik+Doodle+Shadow&family=Rubik+Maps&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Titan+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@700&family=Rubik+Doodle+Shadow&family=Rubik+Maps&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Titan+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    
+    --primary-color: #F3D7CA;
+    --secondary-color: #FFF8E3; 
+    --tertiary-color:#E6A4B4; 
+    --color-tittle:#252A2E;
+    --fontsize-title: 40px;
+    --fontsize-paragraphs:20px;
+}
+.nav-portafolio{
+    background: var(--tertiary-color);
+    justify-content: flex-end;
+    width: 100;
+    /* border-bottom: 1.5px solid transparent; */
+    
+}
+nav .nav-portafolio ul li a{
+    color:#fff;
+    position: relative;
+    font-size: 20px;
+
+}
+
+nav .nav-portafolio ul li a::after{
+    width: 20%;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+
+nav .nav-portafolio ul li a:hover{
+    color: var(--secondary-color);
+
+}
+
+nav .nav-portafolio ul li a:hover:after{
+    background: var(--secondary-color);
+    width: 40%;
+}
+
+nav .nav-portafolio .nav-link{
+    padding: 10px 30px;
+    margin: 0 30px;
+    border-bottom:2px solid transparent;
+}
+
+/* hero */
+
+#hero{
+    padding: 100px 0;
+}
+
+#hero .cont-info{
+    padding-left: 30px;
+}
+
+#hero .cont-info h3{
+    font-size: 50px;
+    font-weight: 600px;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+#hero h2{
+    padding: 20px;
+    right: 50px;
+    font-family: "Quicksand", sans-serif;
+    top: 5px;
+}
+#hero p{
+    font-size: 14px;
+}
+#hero .img-info img{
+    position: relative;
+    margin: auto;
+    border-radius: 75%;
+    cursor: pointer;
+    transition: 4s;
+    padding-left: 50%;
+    z-index: 2;
+    top: 5px;
+    right: 10%;
+
+}
+
+#hero .img-info img:hover{
+    transform: scale(1.1);
+    transition: 4s;
+}
+
+#hero .vector img{
+    position: absolute;
+    right: 5px;
+    bottom: 78px;
+    z-index: 1;
+    padding: 0%;
+    /* margin-top: 0%; */
+  
+}
+
+#btn{
+    background: var(--secondary-color);
+    overflow: hidden;
+    position: relative;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 10px;
+    border: solid 3px var(--secondary-color);
+    z-index: 1;
+    top: 20%;
+    left: 70%;
+    font-size: 15px;
+    border-radius: 50px;
+    font-weight: 700;
+
+}
+
+#btn::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:200%;
+    background: var(--primary-color);
+    left:0;
+    top:-200%;
+    z-index: 1;
+    border-radius: 50%;
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+#btn:hover::before{
+    top: 0;
+    border-radius: 0%;
+}
+
+/* diseño acerca de mi   */
+
+#pp{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 90vh;
+
+}
+
+#pp img{
+    position:relative;
+    z-index: 9;
+    padding: 15%;
+    top: 50px;
+   
+}
+#pp .imgn-info{
+    filter: drop-shadow(0px 7px 21px) ;
+    padding: 10px;
+    
+}
+.imgn-info::after, ::before{
+    box-sizing: border-box;
+}
+
+#pp .imgn-info::before{
+    width: 50%;
+    height: 75%;
+    background: transparent;
+    border: 4px solid var(--tertiary-color);
+    position: absolute;
+    content: "";
+    border-radius: 20px;
+    right: 290px;
+    
+    margin: 0 auto;
+    top: auto;
+    z-index: 2;
+    bottom: 3%;
+}
+
+
+#pp  a{
+    position:absolute;
+    margin: 2%;
+    left: 25%;
+    font-weight: bold;
+    padding: 15px;
+    font-family: "Quicksand", sans-serif;
+    color: #252A2E;
+    letter-spacing: 10px;
+    text-align: center;
+    border-radius:50px;
+    background: var(--secondary-color);
+    text-decoration: none;    
+    
+}
+
+
+#pp .card{
+    position: relative;
+    background:var(--secondary-color);
+    color: #080202;
+    height:max-content;
+    margin-top: 13%;
+    /* bottom- -5%; */
+    border-radius: 20px;
+    /* margin: 10px 30px; */
+    background-size: cover;
+    transition: .4s;
+    left: 5%;
+    
+
+}
+#pp .col-md{
+  
+    transform: scale(1.1);
+    transition: 4s;
+}
+#pp p{
+    font-size: medium;
+    font-family:"Quicksand", sans-serif;
+    color:var(--color-tittle);
+    margin: auto;
+    cursor: pointer;
+    transition: 4s;
+}
+
+#pp p:hover{
+    transform: scale(1.1);
+    transition: 4s;
+}
+
+#pp .intereses{
+    position: relative;
+    left: 15%;
+
+}
+
+/* stilo skills */
+
+.skills{
+    background-color: #f7efef;
+    color: #080202;
+    padding: 50px 20px;
+    
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills a{
+    position:absolute;
+    justify-content: center;
+    /* margin: 2%; */
+    left: 45%;
+    font-weight: bold;
+    padding: 15px;
+    font-family: "Quicksand", sans-serif;
+    color: #252A2E;
+    letter-spacing: 10px;
+    text-align: center;
+    border-radius:50px;
+    background: var(--secondary-color);
+    text-decoration: none; 
+    
+}
+.skills .fila{
+    display: flex;
+    
+    
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+    margin-top: 10%;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color:#888179;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color:#E6A4B4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--tertiary-color);
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .html{
+    width: 0%;
+    animation: 2s html forwards;
+}
+@keyframes html {
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.skills .skill .css{
+    width: 0%;
+    animation: 2s css forwards;
+}
+@keyframes css {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .php{
+    width: 0%;
+    animation: 2s php forwards;
+}
+@keyframes php {
+    0%{width: 0%;}
+    100%{width: 81%;}
+}
+
+.skills .skill .sql{
+    width: 0%;
+    animation: 2s sql forwards;
+}
+@keyframes sql {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .trabajo{
+    width: 0%;
+    animation: 2s trabajo forwards;
+}
+@keyframes trabajo {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 99%;}
+}
+
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.skills .skill .proyect{
+    width: 0%;
+    animation: 2s proyect forwards;
+}
+@keyframes proyect {
+    0%{width: 0%;}
+    100%{width: 94%;}
+}
+
+
+
+/* stilos proyecrtos  */
+#proyectos{
+    background:var(--primary-color);
+    padding: 40px 10px;
+    width: 100%;
+}
+
+#proyectos h3{
+    padding: 8px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif ;
+    font-weight: bolder;
+    color: #020202;  
+    letter-spacing: 10px;
+    border-bottom: var(--secondary-color);
+}
+
+#proyectos .card{
+    position: relative ;
+    background:var(--secondary-color);
+    border-radius: 25px;
+    border-color: transparent;
+    color: #020202;
+    justify-content: center;
+    padding: 8px;
+    margin: 8px;
+    justify-content: space-around;
+
+}
+#proyectos .card:hover{
+    transform: scale(1.1);
+    transition: 4s;
+}
+
+
+#proyectos .card-title{
+    font-size: 20px;
+    letter-spacing: 10px;
+    text-align: center;
+    padding: 2px;
+}
+
+#proyectos .i img{
+    margin: auto;
+    cursor: pointer;
+    transition: 4s;
+    padding-left: 50%;
+    
+}
+
+#proyectos img{
+    position: relative;
+    left: 8%;
+}
+
+#proyectos .i1{
+    position: relative;
+    left: 33%;
+}
+#proyectos .i2{
+    position: relative;
+    left: 28%;
+}
+#proyectos .i3{
+    position: relative;
+    left: 35%;
+}
+
+#proyectos .card-text{
+    font-size: medium;
+    font-family: "Quicksand", sans-serif ;
+    text-align: center;
+    padding: 2px;
+}
+
+#proyectos .btnp{
+    cursor:pointer;
+	background: var(--tertiary-color);
+	font-size:15px;
+	transition:all 1s;
+    z-index: 1;
+    border: transparent;
+    justify-content: center;
+    color: #020202;
+}
+
+.btnp:hover{
+    background: #5f202d;
+    box-shadow:  0 0 20px;
+ 
+}
+
+/* ESTILOS ESTUDIOS  */
+#ed{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    background: #F5EEE6;
+}
+#ed h3{
+    font-family: "Quicksand", sans-serif ;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.card2{
+    position: relative;
+    width: 300px;
+    height:350px;
+    margin: 55px;
+    
+}
+
+.card2 .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card2 .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #080202;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card2 .front h3{
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif ;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 40px;
+    color: #F5EEE6;
+    background: var(--tertiary-color);
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.card2 .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:var(--tertiary-color);
+    padding: 15px;
+    color: #f7efef;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #080202;
+}
+
+.card2 .back .link{
+    border-top: solid 1px #F5EEE6;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.card2 .back .link a{
+    color:#080202;
+}
+
+.card2 .back .link h3{
+    font-size:90px ;
+    margin-top: 20px;
+    letter-spacing: 10px;
+   
+}
+
+.card2 .back p{
+    letter-spacing: 1px;
+    font-family: "DM Sans", sans-serif; 
+    font-size: 15px;
+    color: var(--color-tittle);
+
+}
+
+.card2:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card2:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/* estilos hobbies  */
+
+#ho{
+    background: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+#ho .btnh{
+    display: inline-block;
+    background: var(--secondary-color);
+    color: var(--color-tittle);
+    padding: 10px;
+    text-decoration: none;
+    margin: 35px 0;
+    margin-left: 22px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+#ho .ho-info{
+    font-size: 18px;
+    padding-top: 110px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    height: max-content;
+   
+}
+
+#ho .card1{
+    background: var(--secondary-color);
+    border-radius: 25px;
+    padding: 15px;
+}
+
+
+#ho p{
+    padding: 5px;
+    font-family: "Quicksand", sans-serif;
+    
+}
+
+
+#ho .imagenes{
+    position: relative;
+    margin: 40px;
+    justify-content: center;
+    margin-top: 2%;
+    transition: 4s;
+
+}
+
+.imagenes:hover{
+    transform: scale(1.1);
+    transition: 4s;
+}
+
+#ho .foto .im{
+    position:absolute;
+    padding: 0 125px;
+    width: 38%;
+    height: 365px;
+    border:#E6A4B4;
+    border-radius: 40%;
+}
+
+.foto .im:hover{
+    transform: scale(1.1);
+    transition: 4s;
+}
+
+/* ESTILOS REDES */
+
+#redes{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+}
+#redes a{
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--color-tittle);
+    padding: 10px;
+    text-decoration: none;
+    margin: 35px 0;
+    margin-left: 22px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 5px;
+    font-weight: 700;
+    left: 15px;
+}
+#redes .btnr {
+    justify-content: center;
+    
+}
+#redes .r-info {
+    position:static;
+    justify-content: center;
+    display:flex;
+
+    
+}
+#redes .r-info .im1{
+    width: 20px;
+    margin: 5%;
+}
+
+#redes .r-info a{
+    position: relative;
+    bottom: 17%;
+    margin-left:25%;
+    margin: 25px;
+
+}
+
+#redes button{
+    justify-content: center;
+    left:4%;
+}
+
+
+/* estilo footer */
+
+footer{
+    background-color: var(--tertiary-color);
+    height: 18vh;
+    width: 100%;
+}
+footer img{
+    position: absolute;
+    display: flex;
+    right: 60%;
+    padding: 30px;
+    
+
+}
+
+footer p{
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    left: 5%;
+    padding-top: 45px;
+}
+
+
